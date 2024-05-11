@@ -14,22 +14,24 @@
       <div>
         <img class="clark-lane-logo" src="clarklane.png">
       </div>
-      <div class="log-in">
+      <div class="login">
         <div class="welcome-text">
           <p>
-            Welcome Back!
+            Login
           </p>
         </div>
         <div class="username">
           <p style="margin-bottom: 10px">
             Username
           </p>
+         
           <input class="user-box" type="text"> 
         </div>
         <div class="password">
           <p style="margin-bottom: 10px">
             Password
           </p>
+          
           <span class="eye" onclick="myFunction()"> 
             <input class="pass-box" type="password" id="myInput"> 
             <i id="hide1" class="fa-solid fa-eye"></i> 
@@ -41,10 +43,24 @@
           <button class="log-in-button">
             Log In
           </button>
-        </div> 
-      </div>      
-    </div>
 
+          <div class="register-here">
+            <span class="signup">Register
+              <a href="register.html">here</a>
+        </span>
+          </div>
+          
+       
+        
+     
+    
+      <script>
+        const login = document.querySelector('login');
+        const register = document.querySelector('register');
+
+        register.addEventListener('click', ()=> {login.classlist.add('active');});
+
+      </script>
       <script>
         function myFunction(){
             var x = document.getElementById("myInput");
@@ -63,7 +79,8 @@
             }
         }
       </script>
-
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
   </body>
