@@ -23,18 +23,20 @@ button{
   margin-top: 15px;
   display: flex;
   font-family: Lexend Exa;
-  width: 200px;
-  align-items: center;
-  margin-left: 50px;
-  margin-bottom: 15px;
-  justify-content: center;
-  border: none;
-  background-color: rgb(173, 173, 173);
   font-size: 15px;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
 }
 
 button:active{
-  opacity: 70%;
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
 
 #stockTable {
@@ -47,4 +49,8 @@ button:active{
   padding-right: 15px;
   background-color: white;
   border-radius: 5px;
+}
+
+input{
+  font-family: Lexend Exa;
 }

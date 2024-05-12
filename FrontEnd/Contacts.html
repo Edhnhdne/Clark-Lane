@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+          <script src="https://kit.fontawesome.com/179c54bbd3.js"></script>
+          <link rel="stylesheet" href="Contacts.css">
+  </head>
+  <body>
+   
+    
+    <div>
+      <h2>Supplier Contact List</h2>
+      <table id="sales-contacts">
+        <tr>
+          <th>Supplier</th>
+          <th>Product</th>
+          <th>Address</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Company Name"></td>
+          <td><input type="text" placeholder="Product Name"></td>
+          <td><input type="email" placeholder="Company Address"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Company Name"></td>
+          <td><input type="text" placeholder="Product Name"></td>
+          <td><input type="email" placeholder="Company Address"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Company Name"></td>
+          <td><input type="text" placeholder="Product Name"></td>
+          <td><input type="email" placeholder="Company Address"></td>
+        </tr>
+      </table>
+      
+    </div>
+
+    <br>
+    <button onclick="addRow()">Add Supplier</button>
+  
+    <script>
+      function addRow() {
+        var table = document.getElementById("sales-contacts");
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+  
+        
+        cell1.innerHTML = "<input type='text' placeholder='Company Name'>";
+        cell2.innerHTML = "<input type='text' placeholder='Product Name'>";
+        cell3.innerHTML = "<input type='text' placeholder='Company Address'>";
+      }
+    </script>
+  </body>
+</html>
